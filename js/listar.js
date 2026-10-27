@@ -50,9 +50,9 @@ async function listarPessoas() {
             linkEditar.className = "botao";
             linkEditar.textContent = "Editar";
 
-            const botaoExcluir = document.createElement("button");
+            const botaoExcluir = document.createElement("buttonExcluir");
             botaoExcluir.textContent = "Excluir";
-            botaoExcluir.className = "perigo";
+            botaoExcluir.className = "botaoExcluir";
             botaoExcluir.addEventListener("click", ()=> excluirPessoa(pessoa.id));
             
             celulaAcoes.append(linkEditar, botaoExcluir);

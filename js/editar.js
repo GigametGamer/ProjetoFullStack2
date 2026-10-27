@@ -42,10 +42,9 @@ formulario.addEventListener("submit", async (evento) => {
   evento.preventDefault();
 
   const nome = campoNome.value.trim();
-  const idade = Number(campoIdade.value);
 
-  if (!nome || !Number.isInteger(idade) || idade < 0 || idade > 130) {
-    mensagem.textContent = "Informe um nome e uma idade válida.";
+  if (!nome) {
+    mensagem.textContent = "Informe um nome válido.";
     return;
   }
 
@@ -56,7 +55,7 @@ formulario.addEventListener("submit", async (evento) => {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ nome, idade })
+      body: JSON.stringify({ nome })
     });
 
     if (!resposta.ok) {

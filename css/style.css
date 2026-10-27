@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 30px 16px;
     font-family: Arial, sans-serif;
-    background-color: #f3f5f9;
+    background-color: #dc0b0b;
     color: #202936;
 }
 
@@ -40,7 +40,7 @@ label{
 input{
     width: 100%;
     padding: 12px;
-    border: 1px solid #c5cbd4;
+    border: 1px solid #364f74;
     border-radius: 6px;
     font-size: 16px;
 }
@@ -55,17 +55,45 @@ button, .botao{
     font: inherit;
     text-decoration: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:houver, .botao:houver{
-    opacity: 0.9;
+button:hover, .botao:hover{
+    background-color: #003089;
 }
 
-.secundario{
-    background: #626c7b;
+.botaoCancelar{    
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #969aa1;
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.perigo{
-    background: red;
+
+.botaoCancelar:hover{
+    background-color: #605f5f;
+}
+
+.botaoExcluir{
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #ff0000;
+    color: white;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botaoExcluir:hover{
+    background-color: #a51f2c;
 }
 
 .acoes{
